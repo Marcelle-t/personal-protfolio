@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Marcelle Tam</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Minimal fallback styling so you see content even if style.css fails */
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f8f9fa; color:#333; }
+    header { background:#111; color:#fff; padding:12px 0; }
+    nav { display:flex; align-items:center; justify-content:space-between; max-width:1100px; margin:0 auto; padding:0 20px; }
+    .logo { margin:0; }
+    .nav-links { list-style:none; display:flex; gap:18px; margin:0; padding:0; }
+    .nav-links a { color:#fff; text-decoration:none; font-weight:bold; }
+    .projects { max-width:1100px; margin:30px auto; padding:0 20px; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:18px; }
+    .project-card { background:#fff; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,.1); overflow:hidden; display:flex; flex-direction:column; }
+    .project-card img { width:100%; height:160px; object-fit:cover; background:#eaeaea; }
+    .project-info { padding:16px; }
+    .btn { display:inline-block; margin-top:8px; background:#0056b3; color:#fff; padding:8px 12px; border-radius:6px; text-decoration:none; }
+    .btn:hover { background:#003d82; }
+    footer { background:#111; color:#fff; text-align:center; padding:10px 0; margin-top:30px; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h2 class="logo">Marcelle Tam</h2>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="projects">
+    <h1>My Projects</h1>
+    <p>Selected work in AI, ethics, decision support, and software engineering.</p>
+
+    <div class="grid">
+      <div class="project-card">
+        <img src="images/ai_ethics.jpg" alt="AI Ethics Module">
+        <div class="project-info">
+          <h3>AI Ethics Module – Amazon Hiring Bias</h3>
+          <p>Interactive teaching module on algorithmic bias in AI-powered recruitment.</p>
+          <a class="btn" href="projects/ai_ethics.html">View Details</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/decision_tree.jpg" alt="Decision Tree Chatbot">
+        <div class="project-info">
+          <h3>Decision Tree Chatbot (Transportation Risk)</h3>
+          <p>LLM-assisted decision-tree chatbot (MiniBERT) for transportation needs triage.</p>
+          <a class="btn" href="projects/chatbot.html">View Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="images/unet_segmentation.jpg" alt="Breast Cancer UNet">
+        <div class="project-info">
+          <h3>Breast Cancer Segmentation (UNet)</h3>
+          <p>PyTorch UNet to detect malignant regions; evaluated with Dice/IoU.</p>
+          <a class="btn" href="projects/segmentation.html">View Results</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Marcelle Tam</p>
+  </footer>
+</body>
+</html>
